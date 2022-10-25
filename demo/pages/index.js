@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Grid, Col, Row, Spacer } from '@nextui-org/react'
-import ImageCard from './ImageCard'
+import { Grid, Row, Spacer } from '@nextui-org/react'
+import CollapsableCard from './CollapsableCard'
 
 import * as React from 'react';
 
@@ -22,18 +22,20 @@ export default function Home() {
         <Grid.Container justify="center">
           <Grid>
             <Row>
-              <ImageCard
-                title="JSX files"
-                subtitle="Easily add HTML to React"
+              <CollapsableCard
+                title="React uses JSX Files"
+                subtitle="Easily embed HTML into react"
                 src="images/Card1.PNG"
+                avatar="images/jsx.png"
               />
 
               <Spacer />
 
-              <ImageCard
-                title="Component Based"
-                subtitle="Create custom UI components"
+              <CollapsableCard
+                title="React is Component Based"
+                subtitle="Create custom components and use them anywhere"
                 src="images/Card2.PNG"
+                avatar="images/React-components.jpg"
               />
             </Row>
           </Grid>
